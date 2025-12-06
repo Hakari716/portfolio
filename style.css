@@ -21,10 +21,108 @@ button {
 	padding: 10px 20px;
 	margin-top: 10px;
 	cursor: pointer;
+	background-color: #333;
+	color: #f5f5f5;
+	border: 1px solid #555;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+button:hover {
+	background-color: #555;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+section h2 {
+	border-bottom: 2px solid #333;
+	padding-bottom: 10px;
 }
 
 /* Dark Theme */
 body.dark {
 	background-color: #121212;
+	color: #e0e0e0;
+}
+
+body.dark header {
+	border-bottom: 1px solid #333;
+	padding-bottom: 20px;
+}
+
+body.dark button {
+	background-color: #1f1f1f;
+	color: #e0e0e0;
+	border: 1px solid #444;
+}
+
+body.dark button:hover {
+	background-color: #2a2a2a;
+}
+
+body.dark section h2 {
+	border-bottom-color: #444;
+}
+
+body.dark section {
+	background-color: #1a1a1a;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+/* Project Links */
+#projects a {
+	color: #0066cc;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+#projects a:hover {
+	text-decoration: underline;
+	color: #0052a3;
+}
+
+body.dark #projects a {
+	color: #66b3ff;
+}
+
+body.dark #projects a:hover {
+	color: #99ccff;
+}
+
+/* Socials Section */
+.social-links {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+
+.social-icon {
+	display: inline-block;
+	padding: 10px 15px;
+	background-color: #333;
 	color: #f5f5f5;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+	background-color: #555;
+	transform: translateY(-2px);
+}
+
+body.dark .social-icon {
+	background-color: #1f1f1f;
+	color: #e0e0e0;
+	border: 1px solid #444;
+}
+
+body.dark .social-icon:hover {
+	background-color: #2a2a2a;
+	border-color: #666;
 }
